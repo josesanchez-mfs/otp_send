@@ -7,8 +7,13 @@ class OtpSendHeader extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return  ColoredBox(
-              color: const Color.fromRGBO(255, 191, 14, 1),
+    return  Container(
+              decoration:  const BoxDecoration(
+                color: Color.fromRGBO(255, 191, 14, 1),
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(32.0), )
+              ),
+
+
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

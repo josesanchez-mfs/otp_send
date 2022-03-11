@@ -17,11 +17,11 @@ class CircleProgress extends StatelessWidget {
                     child: const CircularProgressIndicator(
                       backgroundColor:Color.fromARGB(255, 60, 70, 1),
                       valueColor: AlwaysStoppedAnimation<Color>( Colors.white),
-                      value:0.8
+                      value:1-(1/6)
                     ),
                   ),
                   
-                 Positioned(
+                 const Positioned(
                     left: 6,
                     top: 10,
                     child: Text(

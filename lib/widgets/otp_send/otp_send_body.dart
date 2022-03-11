@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:otp_send/widgets/widgets.dart';
+import 'package:otp_send/widgets/otp_send/checking_code.dart';
 
 class OtpSendBody extends StatelessWidget {
    
@@ -38,7 +38,8 @@ class OtpSendBody extends StatelessWidget {
                             height: 1.5 
                           ),
                         )
-                      )
+                      ),
+                      CheckingCode()
                     ],
                   ),
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:otp_send/widgets/otp_send/otp_input.dart';
+import 'package:otp_send/widgets/otp_send/otp_timer.dart';
 
 class CheckingCode extends StatelessWidget {
    
@@ -34,24 +35,7 @@ class CheckingCode extends StatelessWidget {
            
             child: Column(
               children: [
-
-                  RichText(
-                    text: const TextSpan(
-                      style: TextStyle(
-                        height: 1.5,
-                        color:Color.fromRGBO(76, 88, 102, 1),  
-                      ),
-                      children: <TextSpan>[
-                        TextSpan(text: 'Tu código es válido por '),
-                        TextSpan(
-                          text: '4:59 minutos', 
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          )
-                        ),
-                      ]
-                    )
-                  ),
+                  const OtpTimer(),
                   Container(
                     alignment: Alignment.topCenter,
                     width: screenWidth * 0.55,

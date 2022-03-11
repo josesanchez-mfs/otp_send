@@ -27,19 +27,29 @@ class OtpSendBody extends StatelessWidget {
                     borderRadius: BorderRadius.only(topRight: Radius.circular(32.0), )
                   ),
                   child: Column(
-                    children: const [
+                    children:  [
                       Padding(
-                        padding:  EdgeInsets.fromLTRB(24, 33.5, 24, 0),
-                        child:  Text(
-                          'Enviamos un código a tu celular +52 ********17, por favor ingrésalo para continuar.',
-                          style: TextStyle(
-                            fontSize:14, 
-                            color:Color.fromRGBO(76, 88, 102, 1),
-                            height: 1.5 
-                          ),
-                        )
-                      ),
-                      CheckingCode()
+                        padding: const EdgeInsets.fromLTRB(24, 33.5, 24, 0),
+                        child: RichText(
+                          text: const TextSpan(
+                            style: TextStyle(
+                              height: 1.5,
+                              color:Color.fromRGBO(76, 88, 102, 1),  
+                            ),
+                            children: <TextSpan>[
+                              TextSpan(text: 'Enviamos un código a tu celular '),
+                              TextSpan(
+                                text: '+52 ********17', 
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                )
+                              ),
+                              TextSpan(text: ', por favor ingrésalo para continuar.'),
+                            ]
+                          )
+                        ), 
+                      ), 
+                      const  CheckingCode()
                     ],
                   ),
                 ),

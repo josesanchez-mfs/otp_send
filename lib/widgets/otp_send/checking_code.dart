@@ -60,7 +60,7 @@ class CheckingCode extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(5)),
                       child:  LinearProgressIndicator(
                         minHeight:8,
-                        value: 50/300,
+                        value: 90/300,
                         backgroundColor: Color.fromRGBO(223, 227, 231, 1),
                         valueColor: AlwaysStoppedAnimation<Color>(Color.fromRGBO(255, 191, 14, 1),),
                       ),
